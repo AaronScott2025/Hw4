@@ -16,9 +16,11 @@ public class Staff
 
         // TODO 1: Add 6 emploees to the staffList
 
-        ((Executive)staffList[0]).awardBonus(500.00);
+        staffList[0] = new StaffEmployee("Bobby","123 Fake Street","(847) 625-7272","222-22-2222",45.2);
 
-        ((TempEmploee)staffList[3]).addHours(40);
+//        ((Executive)staffList[0]).awardBonus(500.00);
+//
+//        ((TempEmploee)staffList[3]).addHours(40);
     }
 
     //-----------------------------------------------------------------
@@ -30,6 +32,7 @@ public class Staff
 
         for (int count=0; count < staffList.length; count++)
         {
+            System.out.println("Employee " + (count+1));
             System.out.println(staffList[count]);
 
             amount = staffList[count].pay();  // polymorphic
